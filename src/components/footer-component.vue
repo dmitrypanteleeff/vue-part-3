@@ -15,21 +15,12 @@
 </template>
 
 <script>
-
+import { links } from '@/_config';
 export default {
   name: 'FooterComponent',
-  props: {
-    links: {
-      type: Array,
-      required: true,
-      default: () => {
-        return [
-        {
-          title: 'Home',
-          alias: 'home',
-          url: '/'
-        }]
-      }
+  data() {
+    return {
+      links
     }
   }
 }

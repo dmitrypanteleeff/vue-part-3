@@ -1,18 +1,18 @@
 <template>
   <div class="wrapper">
-    <HeaderComponent :title="title" :links="links" />
+    <HeaderComponent />
     <div class="wrapper-content">
       <div class="container">
         <h1>Hello</h1>
         <p>hello</p>
       </div>
     </div>
-    <FooterComponent :links="links"></FooterComponent>
+    <FooterComponent></FooterComponent>
   </div>
 </template>
 
 <script>
-
+import { process } from '@/_config';
 import HeaderComponent from '@/components/header-component.vue';
 import FooterComponent from '@/components/footer-component.vue';
 
@@ -22,24 +22,9 @@ export default {
   },
   data() {
     return {
+      test: process,
       title: "Header1", 
-      links: [
-        {
-          title: 'Home',
-          alias: 'home',
-          url: '/'
-        },
-        {
-          title: 'About',
-          alias: 'about',
-          url: '/about'
-        },
-      ]
     }
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>
