@@ -3,8 +3,7 @@
     <HeaderComponent />
     <div class="wrapper-content">
       <div class="container">
-        <h1>Hello</h1>
-        <p>hello</p>
+        <router-view />
       </div>
     </div>
     <FooterComponent></FooterComponent>
